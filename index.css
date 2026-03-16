@@ -34,10 +34,12 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #ff3258;
+    --black: #090014;
+    --pink: #d946ef;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+
+    --neon-glow: 0 0 5px #d946ef, 0 0 15px #d946ef, 0 0 30px #d946ef;
 
 
     --container-max-width: 1180px;
@@ -443,6 +445,17 @@ body:not(.user-is-tabbing) a:focus {
 .work__box {
     display: flex;
     align-items: center;
+    border: 2px solid var(--pink); 
+    padding: 3rem;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(217, 70, 239, 0.2); 
+    transition: all 0.3s ease;
+}
+
+.work__box:hover {
+    box-shadow: var(--neon-glow); /* Bright neon glow when you hover! */
+    transform: translateY(-5px);
 }
 
 @media(max-width: 900px) {
