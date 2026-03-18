@@ -454,7 +454,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:hover {
-    box-shadow: var(--neon-glow); /* Bright neon glow when you hover! */
+    box-shadow: var(--neon-glow); 
     transform: translateY(-5px);
 }
 
